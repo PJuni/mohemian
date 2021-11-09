@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ManualEntryCode">
+        <attr name="codeLength" format="integer" />
+        <attr name="blockLength" format="integer" />
+        <attr name="enableLightTheme" format="boolean" />
+        <attr name="digitSize" format="dimension" />
+        <attr name="containerWidth" format="dimension" />
+        <attr name="containerMargin" format="dimension" />
+        <attr name="digitsOnly" format="boolean" />
+        <attr name="useMask" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="apple_200">#FF5FA246</color>
+    <color name="apple_500">#FF5C8C4A</color>
+    <color name="apple_700">#FF547548</color>
+    <color name="gray_200">#FF999999</color>
+    <color name="gray_700">#FF616161</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="coral_red">#F73643</color>
+</resources>

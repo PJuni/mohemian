@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerRegister"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:focusable="true"
+    app:layoutDescription="@xml/fragment_register_scene">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutSearchPhotos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_photos_search"
+        app:endIconDrawable="@android:drawable/ic_search_category_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editSearchPhotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSearchPhotos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutSearchPhotos"
+        app:spanCount="2"
+        tools:listitem="@layout/item_photo" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

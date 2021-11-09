@@ -1,0 +1,62 @@
+ext {
+    uiDependencies = [
+            testImplementation       : [],
+            androidTestImplementation: [],
+            implementation           : [
+                    project(':domain'),
+                    "androidx.core:core-ktx:${Versions.Androidx.CoreKtx}",
+                    "androidx.appcompat:appcompat:${Versions.Androidx.Appcompat}",
+                    "com.google.android.material:material:${Versions.Material}",
+                    "androidx.constraintlayout:constraintlayout:${Versions.Constraint}",
+                    "androidx.navigation:navigation-fragment-ktx:${Versions.Navigation}",
+                    "androidx.navigation:navigation-ui-ktx:${Versions.Navigation}",
+                    "androidx.navigation:navigation-runtime-ktx:${Versions.Navigation}",
+                    "com.github.kirich1409:viewbindingpropertydelegate:${Versions.ViewBinding}",
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.Coroutines}",
+                    "com.google.dagger:hilt-android:${Versions.Hilt}",
+                    "com.jakewharton.timber:timber:${Versions.Timber}",
+                    "com.googlecode.flickrj-android:flickrj-android:${Versions.Flickr}",
+                    "com.squareup.picasso:picasso:${Versions.Flickr}",
+                    "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.Lifecycle}",
+                    "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.Lifecycle}",
+                    "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.Lifecycle}",
+                    "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.HiltLifecycle}",
+            ],
+            kapt : [
+                    "com.google.dagger:hilt-compiler:${Versions.Hilt}",
+            ],
+    ]
+    dataDependencies = [
+            testImplementation       : [],
+            androidTestImplementation: [],
+            implementation           : [
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.Coroutines}",
+                    "com.google.dagger:hilt-android:${Versions.Hilt}",
+                    "com.jakewharton.timber:timber:${Versions.Timber}",
+                    "com.googlecode.flickrj-android:flickrj-android:${Versions.Flickr}",
+                    "com.squareup.retrofit2:retrofit:${Versions.Retrofit}",
+                    "com.squareup.retrofit2:converter-gson:${Versions.Gson}",
+                    "com.squareup.okhttp3:logging-interceptor:${Versions.LoggingInterceptor}",
+            ],
+            kapt : [
+                    "com.google.dagger:hilt-compiler:${Versions.Hilt}",
+            ],
+    ]
+    domainDependencies = [
+            testImplementation       : [],
+            androidTestImplementation: [],
+            implementation           : [
+                    project(':data'),
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.Coroutines}",
+                    "com.google.dagger:hilt-android:${Versions.Hilt}",
+                    "com.jakewharton.timber:timber:${Versions.Timber}",
+                    "com.googlecode.flickrj-android:flickrj-android:${Versions.Flickr}",
+                    "com.squareup.retrofit2:retrofit:${Versions.Retrofit}",
+                    "com.squareup.retrofit2:converter-gson:${Versions.Gson}",
+                    "com.squareup.okhttp3:logging-interceptor:${Versions.LoggingInterceptor}",
+            ],
+            kapt : [
+                    "com.google.dagger:hilt-compiler:${Versions.Hilt}",
+            ],
+    ]
+}

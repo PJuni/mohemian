@@ -1,0 +1,22 @@
+buildscript {
+    apply from: rootProject.file("versions.gradle")
+    apply from: rootProject.file("dependencies.gradle")
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:${Versions.AGP}"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.0-beta02"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:${Versions.Hilt}"
+    }
+}
+
+subprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}

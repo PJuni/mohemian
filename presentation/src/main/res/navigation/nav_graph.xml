@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentSearchPhotos">
+    <fragment
+        android:id="@+id/fragmentSearchPhotos"
+        android:name="app.mohemian.ui.searchPhotos.SearchPhotosFragment"
+        android:label="SearchPhotos"
+        tools:layout="@layout/fragment_search_photos">
+        <action
+            android:id="@+id/action_fragmentSearchPhotos_to_fragmentPhotoDetail"
+            app:destination="@id/fragmentPhotoDetail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/fragmentSearchPhotos" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPhotoDetail"
+        android:name="app.mohemian.ui.photoDetail.PhotoDetailFragment"
+        android:label="PhotoDetail"
+        tools:layout="@layout/fragment_photo_detail" >
+        <argument
+            android:name="photo"
+            app:argType="app.mohemian.domain.entity.Photo"/>
+    </fragment>
+</navigation>

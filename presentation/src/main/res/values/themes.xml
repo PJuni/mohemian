@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Mohemian" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/apple_500</item>
+        <item name="colorPrimaryVariant">@color/apple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/gray_200</item>
+        <item name="colorSecondaryVariant">@color/gray_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/Widget.Mohemian.TextInputLayout</item>
+
+        <item name="editTextStyle">@style/Widget.Mohemian.TextInputEditText</item>
+    </style>
+
+    <style name="Theme.Mohemian.Splash" parent="Theme.Mohemian">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="Theme.Mohemian.Fullscreen" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Mohemian.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Mohemian.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Widget.Mohemian.TextInputEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Widget.Mohemian.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.ViStart.TextInputLayout</item>
+        <item name="android:textColorHint">?attr/colorSecondaryVariant</item>
+        <item name="hintTextColor">?attr/colorPrimary</item>
+        <item name="hintTextAppearance">@style/TextHint</item>
+        <item name="colorControlNormal">@color/gray_200</item>
+        <item name="colorControlActivated">@color/apple_200</item>
+        <item name="colorControlHighlight">@color/apple_200</item>
+        <item name="android:textColorHighlight">@color/apple_200</item>
+        <item name="boxStrokeErrorColor">@android:color/holo_red_light</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="errorEnabled">true</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="passwordToggleTint">?attr/colorPrimary</item>
+        <item name="endIconTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ThemeOverlay.ViStart.TextInputLayout" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="editTextStyle">@style/ThemeOverlay.ViStart.TextInputEditText</item>
+    </style>
+
+    <style name="ThemeOverlay.ViStart.TextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+</resources>

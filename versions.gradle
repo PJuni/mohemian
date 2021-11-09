@@ -1,0 +1,40 @@
+def AndroidxVersions = [
+        Lifecycle: '2.3.0',
+        CoreKtx  : '1.7.0',
+        Appcompat: '1.3.1'
+]
+
+def TestingVersions = [
+        AndroidTest: '1.3.0',
+        JUnit      : '4.13.2',
+        JUnitExt   : '1.1.2'
+]
+
+ext.Versions = [
+        AGP               : '7.0.2',
+        Kotlin            : '1.5.21',
+        Coroutines        : '1.5.2',
+        Lifecycle         : '2.4.0',
+
+        Androidx          : AndroidxVersions,
+        Testing           : TestingVersions,
+
+        Material          : '1.4.0',
+        Constraint        : '2.1.1',
+        ViewBinding       : '1.4.6',
+        Hilt              : '2.38.1',
+        HiltLifecycle     : '1.0.0-alpha03',
+
+        Retrofit          : '2.9.0',
+        Gson              : '2.9.0',
+        LoggingInterceptor: '4.9.2',
+
+        Picasso           : '2.71828',
+
+        Navigation        : '2.3.5',
+
+        Timber            : '5.0.1',
+
+        Flickr            : '2.1.0',
+
+]
